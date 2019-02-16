@@ -17,3 +17,5 @@ print("practice")
 func div(a: Int, b: Int) -> Int {
     return a/b
 }
+
+// develop comments
