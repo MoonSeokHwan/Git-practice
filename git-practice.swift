@@ -12,4 +12,4 @@ func mul(a: Int, b: Int) -> Int {
     return a*b
 }
 
-print("practice")
+print("practice") // ref.
