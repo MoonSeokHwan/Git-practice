@@ -2,40 +2,16 @@
 (첫째 줄에 A와 B가 주어진다. (0 < A, B < 10)
 */
 
+//Answer #1
+
 import Foundation
 
-print("Please input the values")
+var inputNum = readLine()! // readLIne -> String? Type 으로 반환
+var array = inputNum.components(separatedBy: " ").map{Int($0)!} // " " 로 입력된 인자를 구분하여 array에 배열 -> Mapping을 통해 Int Type으로 반환
 
-var num1 = readLine()!
-var num2 = readLine()!
-var int1 = Int(num1)
-var int2 = Int(num2)
+if array[0] > 0 && array[1] < 10 {
 
-if let a = int1{
-if let b = int2{
-    if a > 0 && b < 10{
-        let result = a+b
-        print(result)
-    } else {
-        print("Please retry it!")      
-    }   
+print(array[0]+array[1])
+
 }
-}
-/*
-import Foundation
 
-print("Please input the values")
-
-var a = readLine()
-if let num = a {
-    var array = num.components(separatedBy:" ")
-    if Int(array[0])! > 0 && Int(array[1])! < 10 {
-        let add = Int(array[0])! + Int(array[1])!
-    print(add)
-    }
-    else {
-        print("Please retry")
-    }
-    
-}
-*/
